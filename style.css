@@ -1,0 +1,827 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto,Helvetica,sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.uniform-color {
+    color: #002f34;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.top-btn-div {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    position: absolute;
+    top: 130%;
+}
+
+.goto-top-btn {
+    display: flex;
+
+    width: fit-content;
+
+    gap: 7px;
+
+    padding: 10px 20px;
+
+    border: 1px solid #002f34;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #002f34;
+}
+
+.top-btn-arrow {
+    width: 17px;
+    transform: rotate(180deg);
+}
+
+/* Nav Bar Styling */
+
+.navbar {
+    background-color: #f7f8f8;
+    padding: 11px 0 11px 30px;
+
+    position: sticky;
+    top: 0;
+}
+
+/* Nav Bar upper portion styling */
+
+.nav-child-1 {
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.nav-sub-child {
+    display: flex;
+    align-items: center;
+}
+
+.olx-logo-blue {
+    height: auto;
+    max-height: 1.7rem;
+}
+
+.nav-car-logo {
+    height: auto;
+    max-height: 2rem;
+
+    border-radius: 50%;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.066) , #f7f8f8);
+
+    margin-right: 5px;
+}
+
+.nav-property-logo {
+    height: auto;
+    max-height: 2rem;
+
+    border-radius: 50%;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.066) , #f7f8f8);
+
+    padding: 7px 8px;
+    margin-right: 5px;
+}
+
+.nav-heading {
+    font-size: 11.5px;
+}
+
+/* Nav Bar lower portion styling */
+
+.nav-child-2 {
+    display: flex;
+    align-items: center;
+
+    margin-top: 10px;
+
+    gap: 25px;
+}
+
+.olx-logo-black {
+    height: auto;
+    max-height: 4.2rem;
+}
+
+.nav-dropdown-main {
+    background-color: white;
+
+    border: 2px solid #002f34;
+    border-radius: 4px;
+
+    padding: 10px;
+
+    position: relative;
+}
+
+.nav-dropdown {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.search-icon {
+    height: auto;
+    max-height: .8rem;
+}
+
+.dropdown-input {
+    border: none;
+
+    color: rgba(0, 0, 0, 0.826);
+
+    font-size: 15px;
+}
+
+.dropdown-input:focus {
+    outline: none;
+}
+
+.arrow-icon {
+    height: .8rem;
+
+    cursor: pointer;
+
+    transform: rotate(0deg);
+
+    transition: transform 200ms linear;
+}
+
+.arrow-icon:hover {
+    transform: rotate(180deg);
+}
+
+.arrow-icon:hover + .dropdown-list {
+    transform: scaleY(1);
+}
+
+.dropdown-list {
+    transform: scaleY(0);
+    transform-origin: top;
+
+    width: 101%;
+    height: 280px;
+
+    position: absolute;
+    top: 108%;
+    left: -1px;
+
+    z-index: 10;
+
+    border-radius: 4px;
+
+    background-color: white;
+
+    box-shadow: 0 0 2px 0;
+
+    overflow-y: scroll;
+
+    transition: transform 200ms linear;
+}
+
+.curr-loc {
+    display: flex;
+    align-items: center;
+
+    padding-left: 15px;
+
+    width: 100%;
+    height: 70px;
+
+    border-bottom: 1px solid rgba(128, 128, 128, 0.483);
+}
+
+.curr-loc-icon {
+    height: 24px;
+}
+
+.curr-loc-txt {
+    color: #3a77ff;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.border-b {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.483);
+}
+
+.loc {
+        display: flex;
+        align-items: center;
+    
+        padding-left: 15px;
+    
+        width: 100%;
+        height: 50px;
+}
+
+.loc-icon, .loc-icon-responsive {
+    height: 23px;
+    width: 25px;
+}
+
+.loc-icon-responsive {
+    display: none;
+}
+
+.loc-txt {
+    font-size: 13px;
+
+    color: rgba(0, 0, 0, 0.854);
+}
+
+.loc-heading {
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    color: grey;
+}
+
+.search-div, .search-div-responsive {
+    display: flex;
+    align-items: center;
+
+    width: 50%;
+    height: 43px;
+
+    border: 2px solid #002f34;
+    border-radius: 4px;
+}
+
+.search-div-responsive {
+    width: 100%;
+    display: none;
+}
+
+.search-input {
+    height: 100%;
+    width: 94%;
+
+    border: none;
+
+    text-indent: 10px;
+
+    font-size: 15px;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-icon-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 6%;
+    min-width: 40px;
+
+    background-color: #002f34;
+}
+
+.search-icon-white {
+    width: 18px;
+}
+
+.login-btn {
+    text-decoration: none;
+    
+    color: #002f34;
+
+    font-size: 14.5px;
+    font-weight: bold;
+
+    border-bottom: 2px solid #002f34;
+}
+
+.sell-btn-div {
+    width: 105px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+
+    background-image: url(./assets/icons/sell-btn-border.svg);
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+}
+
+
+.sell-txt {
+    color: #002f34;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.category-container {
+    width: 100%;
+}
+
+.category-container > ul{
+    display: flex;
+    align-items: center;
+
+    height: 45px;
+
+    list-style: none;
+
+    box-shadow: 0px .1px .111px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.75);
+}
+
+.category-txt {
+    font-size: 13px;
+
+    margin-left: 20px;
+}
+
+.category-txt > a {
+    text-decoration: none;
+
+    color: #002f34;
+}
+
+.category-txt > a:hover {
+    color: #00a49f;
+}
+
+.ad-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%px;
+    height: 210px;
+
+    overflow-x: auto;
+}
+
+.ad-banner-img {
+    width: 1200px;
+    height: 170px;
+
+    border-radius: 4px;
+}
+
+.all-cat-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cat-img-item {
+    text-align: center;
+
+    width: 100px;
+
+    line-height: 17px;
+
+    margin: 8px 15px;
+}
+
+.category-img {
+    width: 80px;
+
+    margin-bottom: 10px;
+}
+
+.cat-img-txt {
+    text-decoration: none;
+
+    color: #002f34;
+
+    font-size: 14.5px;
+    font-weight: bold;
+}
+
+.category-sect-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 35px 20px 20px 20px;
+}
+
+.category-heading {
+    font-size: 20px;
+
+    color: #002f34;
+}
+
+.all-category-heading {
+    font-size: 20px;
+
+    color: #002f34;
+    
+    margin: 35px 20px 20px 20px;
+}
+
+.link {
+    text-decoration: none;
+
+    color: #3a77ff;
+}
+
+.link-arrow {
+    width: 15px;
+
+    cursor: pointer;
+}
+
+.category-section {
+    width: 100%;
+    height: 310px;
+
+    overflow-x: auto;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.link-to-single-ad {
+    text-decoration: none;
+}
+
+.category-item {
+    margin-left: 15px;
+
+    min-width: 200px;
+    width: 300px;
+
+    height: 300px;
+
+    box-shadow: 0 0 1px 0;
+    
+    border-radius: 3px;
+}
+.card-cat{
+    margin: 25px 0px 10px 30px;
+    font-size: 18px;
+}
+
+/*  add cards css */
+#card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    margin: 30px;
+}
+#card-container > div {
+    width: 22%; 
+    height: 8%;
+    border: 2px solid #CCD5D6; 
+    padding: 10px; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#card-container > div img {
+    object-fit: fill;
+    width: 150px;
+    height: 150px;
+    padding: auto;
+}
+
+#card-container > div h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+#card-container > div h4{
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.upload-date {
+    font-size: 11px;
+
+    color: rgba(0, 0, 0, 0.685);    
+}
+
+.download-info {
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+
+    margin-top: 50px;
+
+    background-color: #f7f8f8;
+}
+
+.download-info > div {
+    width: 33%;
+    height: 70%;
+}
+
+.download-info > div:nth-child(2) {
+    padding: 30px 35px;
+}
+
+.download-info > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-self: center;
+
+    padding: 10px 30px;
+
+    border-left: 2px solid rgb(163, 163, 163);
+}
+
+.app-store-btn {
+    width: 120px;
+}
+
+.footer-sub-heading {
+    font-size: 12.5px;
+    font-weight: bold;
+}
+
+.download-btn-div {
+    margin-top: 20px;
+}
+
+.about-olx-text {
+    font-size: 19px;
+
+    margin-top: 18px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    
+    border-top: 1px solid grey;
+
+    background-color: #ebeeef;
+
+    padding-bottom: 40px;
+}
+
+.footer-links div:nth-child(5) {
+    margin-left: 80px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links  h5 {
+    margin: 15px 0;
+}
+
+.footer-links a {
+    font-size: 12px;
+
+    text-decoration: none;
+
+    color: rgba(0,47,52,.64);
+}
+
+.social-media-footer {
+    display: flex;
+    align-items: center;
+
+    gap: 17px;
+}
+
+.social-media-footer i {
+    font-size: 20px;
+
+    color: #002f34b6;
+}
+
+.fa-play{
+    font-size: 15px !important;
+}
+
+.download-btn-div-footer {
+    margin-top: 35px;
+}
+
+.download-btn-div-footer  img {
+    width: 80px;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    background-color: #002f34;
+    color: white;
+
+    font-size: 13px;
+}
+
+@media (max-width: 1075px) {
+    .sell-btn-div {
+        width: 100%;
+        background-position: center;
+
+        position: fixed;
+        bottom: 20px;
+        transform: scale(.8);
+    }
+}
+
+@media (max-width: 950px) {
+    .all-cat-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .navbar {
+        padding: 11px 8px;
+    }
+
+    .nav-child-1 {
+        justify-content: space-between;
+    }
+
+    .olx-logo-black {
+        display: none;
+    }
+
+    .login-btn {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px 0;
+        text-align: center;
+
+        text-decoration: none !important;
+        background-color: #002f34;
+        color: white;
+        border-radius: 3px;
+    }
+
+    .nav-child-2 {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 0;
+    }
+
+    .search-div {
+        display: none;
+    }
+
+    .search-div-responsive {
+        display: block;
+        display: flex;
+        background-color: #fff;
+    }
+
+    .nav-dropdown-main {
+        border: none;
+        background-color: #f7f8f8;
+        margin: 0;
+    }
+
+    .dropdown-input {
+        background-color: #f7f8f8;
+        width: 80px;
+    }
+
+    .loc-icon-responsive {
+        display: block;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    .search-icon-white {
+        width: 22px;
+    }
+
+    .search-icon-area {
+        background-color: #fff;
+        min-width: 30px;
+        width: 5%;
+    }
+
+    .top-btn-div {
+        top: 95%;
+
+        transform: scale(.8);
+    }
+
+
+    .category-container {
+        display: none;
+    }
+    
+    .ad-banner-img {
+        width: 400px;
+        height: auto;
+    }
+
+    .ad-banner {
+        height: 130px;
+    }
+
+    .link {
+        font-size: 13px;
+    }
+
+    .link-arrow {
+        width: 10px;
+    }
+
+    .category-item {
+        min-width: 200px;
+    }
+
+    .category-img {
+        width: 40px;
+    }
+
+    .cat-img-txt {
+        font-size: 12px;
+    }
+
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .footer-links > div:nth-child(5) {
+        margin-left: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .download-info {
+        display: none;
+    }
+
+    .footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1075px) {
+    
+    .category-section {
+        justify-content: space-around;
+    }
+}
+@media (max-width: 1150px) {
+    
+    .download-info > div:nth-child(2) {
+        display: none;
+    }
+
+    .download-info > div {
+        width: 50%;
+    }
+}

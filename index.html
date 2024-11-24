@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/logo/olx-title.png" type="image/x-icon">
+    <title>OLX -  Buy and Sell for free anywhere</title>
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <div class="navbar">
+        <!-- Nav Bar Upper first Part -->
+        <div class="nav-child-1">
+            <a href="#">
+                <img src="./assets/logo/olx-logo.png" alt="ol logo" class="olx-logo-blue">
+            </a>
+            <div class="nav-sub-child">
+                <img src="./assets/logo/car-logo.png" alt="" class="nav-car-logo">
+                <p class="nav-heading">MOTORS</p>
+            </div>
+            <div class="nav-sub-child">
+                <img src="./assets/logo/property-logo.png" alt="" class="nav-property-logo">
+                <p class="nav-heading">PROPERTY</p>
+            </div>
+        </div>
+        <!-- Nav Bar Second Part -->
+        <div class="nav-child-2">
+            <a href="#">
+                <img src="./assets/logo/olx-logo-black.jpg" alt="olx logo" class="olx-logo-black">
+            </a>
+            <div class="nav-dropdown-main">
+                <div class="nav-dropdown">
+                    <img src="./assets/icons/search-icon.png" alt="Search Icon" class="search-icon">
+                    <img src="./assets/icons/location-icon.webp" alt="" class="loc-icon-responsive">
+                    <div class="loc-dropdown">
+                        <input type="text" value="Pakistan" class="dropdown-input">
+                    </div>
+                    <img src="./assets/icons/arrow-icon-dropdown.svg" alt="" class="arrow-icon">
+                    <!-- Nav Bar Location Dropdown -->
+                <div class="dropdown-list">
+                    <!-- Drop down Items -->
+                    <div class="curr-loc">
+                        <img class="curr-loc-icon" src="./assets/icons/curr-location-icon.svg"></img>
+                        <p class="curr-loc-txt">&nbsp;&nbsp;Use current location</p>
+                    </div>
+                    <div class="loc border-b">
+                        <img class="loc-icon" src="./assets/icons/location-icon.webp"></img>
+                        <p class="loc-txt">See all ads in all Pakistan</p>
+                    </div>
+                    <div class="loc">
+                        <p class="loc-heading">Choose Region</p>
+                    </div>
+                    <div class="loc">
+                        <img class="loc-icon" src="./assets/icons/location-icon.webp"></img>
+                        <p class="loc-txt">Azad Kashmir, Pakistan</p>
+                    </div>
+                    <div class="loc">
+                        <img class="loc-icon" src="./assets/icons/location-icon.webp"></img>
+                        <p class="loc-txt">Islamabad Capital Territory, Pakistan</p>
+                    </div>
+                    <div class="loc">
+                        <img class="loc-icon" src="./assets/icons/location-icon.webp"></img>
+                        <p class="loc-txt">Khyber Pakhtunkhwa, Pakistan</p>
+                    </div>
+                    <div class="loc">
+                        <img class="loc-icon" src="./assets/icons/location-icon.webp"></img>
+                        <p class="loc-txt">Northern Areas, Pakistan</p>
+                    </div>
+                    <div class="loc">
+                        <img class="loc-icon" src="./assets/icons/location-icon.webp"></img>
+                        <p class="loc-txt">Punjab, Pakistan</p>
+                    </div>
+                    <div class="loc">
+                        <img class="loc-icon" src="./assets/icons/location-icon.webp"></img>
+                        <p class="loc-txt">Sindh, Pakistan</p>
+                    </div>
+                </div>
+                </div>  
+            </div>
+            <!-- Search Field -->
+            <div class="search-div">
+                    <input type="text" placeholder="Find Cars, Mobile Phones and more..." class="search-input">
+                <div class="search-icon-area">
+                    <img src="./assets/icons/search-icon-white.png" alt="" class="search-icon-white">
+                </div>
+            </div>
+            <div class="search-div-responsive">
+                <div class="search-icon-area">
+                    <img src="./assets/icons/search-icon.png" alt="" class="search-icon-white">
+                </div>
+                <input type="text" placeholder="All ads in Pakistan" class="search-input">
+            </div>
+            <!-- Login Button -->
+            <a href="./login/index.html" class="login-btn" id="loginlink">
+                Login
+            </a>
+            
+            <!-- Sell Button -->
+                <div class="sell-btn-div" id="sell" onclick="sell()">
+                    <img src="./assets/icons/sell-btn-plus-icon.svg" alt="Plus icon" class="plus-icon">
+                    <p class="sell-txt">SELL</p> 
+                </div>
+        </div>
+        <div class="top-btn-div">
+            <a href="#top" class="goto-top-btn">
+                <img src="./assets/icons/arrow-icon-dropdown.svg" alt="Arrow" class="top-btn-arrow">
+                <h5>Back to top</h5>    
+            </a>
+        </div>
+    </div>
+        <!-- Category Section -->
+        <div class="category-container">
+            <ul>
+                <li class="category-txt bold">All Categories</li>
+                <li class="category-txt">
+                    <img src="./assets/icons/arrow-icon-dropdown.svg" alt="" class="arrow-icon">
+                </li>
+                <li class="category-txt">
+                    <a href="./All Files/Mobile Phones/mobilephone.html">
+                        Mobile Phones
+                    </a>
+                </li>
+                <li class="category-txt">
+                    <a href="./All Files/Cars/cars.html">
+                        Cars
+                    </a>
+                </li>
+                <li class="category-txt">
+                    <a href="./All Files/Bikes/bikes.html">
+                        Motorcycles
+                    </a>
+                </li>
+                <li class="category-txt">
+                    <a href="./All Files/Houses/houses.html">
+                        Houses
+                    </a>
+                </li>
+                <li class="category-txt">
+                    <a href="./All Files/TV-Audio-Video/tv.html">
+                        TV - Video - Audio
+                    </a>
+                </li>
+                <li class="category-txt">
+                    <a href="./All Files/Mobile Phones/mobilephone.html">
+                        Tablets
+                    </a>
+                </li>
+                <li class="category-txt">
+                    <a href="./All Files/Houses/houses.html">
+                        Land & Plots
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Main Ad Section -->
+        <div class="ad-banner" id="top">
+            <img src="./assets/icons/top-banner.jpg" alt="" class="ad-banner-img">
+        </div>
+
+        <!-- All Categories Section -->
+        <h3 class="all-category-heading">All Categories</h3>
+        <div class="all-cat-container">
+            <div class="cat-img-item">
+                <a href="./All Files/Mobile Phones/mobilephone.html">
+                    <img src="./assets/category-logos/mobile.png" alt="" class="category-img">                    
+                </a>
+                <div >
+                    <a href="./All Files/Mobile Phones/mobilephone.html" class="cat-img-txt">
+                        Mobiles
+                    </a> 
+                </div>
+            </div>
+            <div class="cat-img-item">
+                <a href="./All Files/Cars/cars.html">
+                    <img src="./assets/category-logos/vehicles.png" alt="" class="category-img">                    
+                </a>
+                <div >
+                    <a href="./All Files/Cars/cars.html" class="cat-img-txt">
+                        Vehicles
+                    </a> 
+                </div>
+            </div>
+            <div class="cat-img-item">
+                <a href="./All Files/Houses/houses.html">
+                    <img src="./assets/category-logos/property-for-sale.png" alt="" class="category-img">                    
+                </a>
+                <div >
+                    <a href="./All Files/Houses/houses.html" class="cat-img-txt">
+                        Property for Sale
+                    </a> 
+                </div>
+            </div>
+            <div class="cat-img-item">
+                <a href="./All Files/Houses/houses.html">
+                    <img src="./assets/category-logos/property-for-rent.png" alt="" class="category-img">                    
+                </a>
+                <div >
+                    <a href="./All Files/Houses/houses.html" class="cat-img-txt">
+                        Property for Rent
+                    </a> 
+                </div>
+            </div>
+            <div class="cat-img-item">
+                <a href="./All Files/TV-Audio-Video/tv.html">
+                    <img src="./assets/category-logos/electronics-home-appliances.png" alt="" class="category-img">                    
+                </a>
+                <div >
+                    <a href="./All Files/TV-Audio-Video/tv.html" class="cat-img-txt">
+                        Electronics & Home Appliances
+                    </a>
+                </div>
+            </div>
+            <div class="cat-img-item">
+                <a href="./All Files/Bikes/bikes.html">
+                    <img src="./assets/category-logos/bikes.png" alt="" class="category-img">                    
+                </a>
+                <div >
+                    <a href="./All Files/Bikes/bikes.html" class="cat-img-txt">
+                        Bikes
+                    </a> 
+                </div>
+            </div>
+            <div class="cat-img-item">
+                <a href="./All Files/No Ads/noads.html">
+                    <img src="./assets/category-logos/business-industrial-agriculture.png" alt="" class="category-img">                    
+                </a>
+                <div >
+                    <a href="./All Files/No Ads/noads.html" class="cat-img-txt">
+                        Business, Industrial & Agriculture
+                    </a> 
+                </div>
+            </div>
+            <div class="cat-img-item">
+                <a href="./All Files/No Ads/noads.html">
+                    <img src="./assets/category-logos/services.png" alt="" class="category-img">                    
+                </a>
+                <div >
+                    <a href="./All Files/No Ads/noads.html" class="cat-img-txt">
+                        Services
+                    </a> 
+                </div>
+            </div>
+            <div class="cat-img-item">
+                <a href="./All Files/Jobs/jobs.html">
+                    <img src="./assets/category-logos/jobs.png" alt="" class="category-img">                    
+                </a>
+                <div >
+                    <a href="./All Files/Jobs/jobs.html" class="cat-img-txt">
+                        Jobs
+                    </a> 
+                </div>
+            </div>
+            <div class="cat-img-item">
+                <a href="./All Files/No Ads/noads.html">
+                    <img src="./assets/category-logos/animals.png" alt="" class="category-img">                    
+                </a>
+                <div >
+                    <a href="./All Files/No Ads/noads.html" class="cat-img-txt">
+                        Animals
+                    </a> 
+                </div>
+            </div>
+            <div class="cat-img-item">
+                <a href="./All Files/No Ads/noads.html">
+                    <img src="./assets/category-logos/furniture-home-decor.png" alt="" class="category-img">                    
+                </a>
+                <div >
+                    <a href="./All Files/No Ads/noads.html" class="cat-img-txt">
+                        Furniture & Home Decor                        
+                    </a> 
+                </div>
+            </div>
+            <div class="cat-img-item">
+                <a href="./All Files/No Ads/noads.html">
+                    <img src="./assets/category-logos/fashion-beauty.png" alt="" class="category-img">                    
+                </a>
+                <div >
+                    <a href="./All Files/No Ads/noads.html" class="cat-img-txt">
+                        Fashion & Beauty
+                    </a> 
+                </div>
+            </div>
+            <div class="cat-img-item">
+                <a href="./All Files/No Ads/noads.html">
+                    <img src="./assets/category-logos/books-sports-hobbies.png" alt="" class="category-img">                    
+                </a>
+                <div >
+                    <a href="./All Files/No Ads/noads.html" class="cat-img-txt">
+                        Books, Sports & Hobbies
+                    </a> 
+                </div>
+            </div>
+            <div class="cat-img-item">
+                <a href="./All Files/No Ads/noads.html">
+                    <img src="./assets/category-logos/kids.png" alt="" class="category-img">                    
+                </a>
+                <div >
+                    <a href="./All Files/No Ads/noads.html" class="cat-img-txt">
+                        Kids
+                    </a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="card-cat">
+            <h3>All Catagories</h3>
+        </div>
+
+            <div id="card-container">
+        
+        </div>
+
+        <!-- OLX App info -->
+        <div class="download-info">
+            <div>
+                <img src="./assets/bg-images & banner/footer-banner.webp" alt="">
+            </div>
+            <div>
+                <h1 class="uniform-color">TRY THE OLX APP</h1>
+                <p class="about-olx-text">Buy, sell and find just about anything using the app on your mobile.</p>
+            </div>
+            <div>
+                <h4 class="footer-sub-heading uniform-color">GET YOUR APP TODAY</h4>
+                <div class="download-btn-div">
+                    <a href="https://apps.apple.com/pk/app/olx-pakistan/id1551315538" target="_blank">
+                        <img src="./assets/icons/app-store-btn.svg" alt="" class="app-store-btn">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.olx.pk" target="_blank">
+                        <img src="./assets/icons/google-play-store-btn.svg" alt="" class="app-store-btn">
+                    </a>
+                    <a href="https://appgallery.huawei.com/#/app/C104375435" target="_blank">
+                        <img src="./assets/icons/app-gallery-btn.svg" alt="" class="app-store-btn">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="footer-links">
+            <div class="footer-links-child">
+                <h5>POPULAR CATEGORIES</h5>
+                <ul>
+                    <li>
+                        <a href="./All Files/Cars/cars.html">Cars</a>
+                    </li>
+                    <li>
+                        <a href="./All Files/Mobile Phones/mobilephone.html">Mobile Phones</a>
+                    </li>
+                    <li>
+                        <a href="./All Files/Houses/houses.html">Houses</a>
+                    </li>
+                    <li>
+                        <a href="./All Files/Jobs/jobs.html">Jobs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links-child">
+                <h5>TRENDING SEARCHES</h5>
+                <ul>
+                    <li>
+                        <a href="./All Files/Bikes/bikes.html">Bikes</a>
+                    </li>
+                    <li>
+                        <a href="./All Files/Cars/cars.html">Cars</a>
+                    </li>
+                    <li>
+                        <a href="./All Files/TV-Audio-Video/tv.html">TV</a>
+                    </li>
+                    <li>
+                        <a href="./All Files/Houses/houses.html">House</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links-child">
+                <h5>ABOUT US</h5>
+                <ul>
+                    <li>
+                        <a href="#">About Dubizzle Group</a>
+                    </li>
+                    <li>
+                        <a href="#">OLX Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#">OLX for Businesses</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links-child">
+                <h5>OLX</h5>
+                <ul>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">Sitemap</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links-child">
+                <h5>FOLLOW US</h5>
+                    <ul class="social-media-footer">
+                        <li>
+                            <a href="https://www.facebook.com/olxpakistan" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/OLX_Pakistan" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCARDDjJnW7IRBpo_AP7WTHQ" target="_blank">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/olx.pakistan/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="download-btn-div-footer">
+                        <a href="https://apps.apple.com/pk/app/olx-pakistan/id1551315538" target="_blank">
+                            <img src="./assets/icons/app-store-btn.svg" alt="" class="app-store-btn">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.olx.pk" target="_blank">
+                            <img src="./assets/icons/google-play-store-btn.svg" alt="" class="app-store-btn">
+                        </a>
+                        <a href="https://appgallery.huawei.com/#/app/C104375435" target="_blank">
+                            <img src="./assets/icons/app-gallery-btn.svg" alt="" class="app-store-btn">
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+        <script src="./login/login.js"></script>
+     
+</body>
+</html>
